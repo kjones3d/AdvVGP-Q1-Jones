@@ -554,9 +554,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 132182, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
-      propertyPath: m_Name
-      value: Ship_Plain
+    - target: {fileID: 431172, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 431172, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -586,16 +586,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 431172, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 431172, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 431172, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
+    - target: {fileID: 11430222, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -604,7 +596,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 132182, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 980711458}
+      addedObject: {fileID: 960578849}
   m_SourcePrefab: {fileID: 100100000, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
 --- !u!4 &729224332 stripped
 Transform:
@@ -727,27 +719,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 729224332}
   smoothing: 5
---- !u!1 &980711451 stripped
+--- !u!1 &960578843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 132182, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
   m_PrefabInstance: {fileID: 631031362}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &980711458
+--- !u!114 &960578849
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980711451}
+  m_GameObject: {fileID: 960578843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7013e862fbe33643a3ccdd8f431f8ec, type: 3}
+  m_Script: {fileID: 11500000, guid: d4bdce908422cbe47b7940a0b007082c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
-  shot: {fileID: 159860, guid: 58681aeb980e943b3a55f82d007574e9, type: 3}
-  shotSpawn: {fileID: 1285014008}
-  nextFire: 0
-  fireRate: 2
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  speed: 50
+  tiltAmt: 30
+  currentTilt: 0
+  hDelta: 10
+  leftBound: -70
+  rightBound: 70
 --- !u!1 &1005080565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,11 +1111,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148704235}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1285014008 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 456800, guid: bd0958a2efff24473b83b98970506ebe, type: 3}
-  m_PrefabInstance: {fileID: 631031362}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1309393774
 GameObject:
   m_ObjectHideFlags: 0
