@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6425184}
   - component: {fileID: 5483210}
   - component: {fileID: 5282532502555988210}
+  - component: {fileID: 370883912824825371}
   m_Layer: 0
   m_Name: Ship_Plain
   m_TagString: Player
@@ -194,6 +195,22 @@ MonoBehaviour:
   tiltAmt: 30
   leftBound: -70
   rightBound: 70
+--- !u!114 &370883912824825371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7013e862fbe33643a3ccdd8f431f8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
+  shot: {fileID: 159860, guid: 58681aeb980e943b3a55f82d007574e9, type: 3}
+  shotSpawn: {fileID: 456800}
+  nextFire: 0
+  fireRate: 2
 --- !u!1 &185818
 GameObject:
   m_ObjectHideFlags: 0
